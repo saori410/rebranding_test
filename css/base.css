@@ -1,0 +1,505 @@
+/*------------------------------------------------------------------
+    [base]
+------------------------------------------------------------------*/
+* {
+    font-family: 'SF Pro Text', Helvetica,'Segoe UI', Arial, 'Hiragino Sans', 'ヒラギノ角ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Roboto, 'Droid Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* ナビゲーションバー用 */
+    padding-top: 4.5rem;
+}
+
+/*img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
+    padding: 0;
+}*/
+.max_width {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.max_width1080 {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*------------------------------------------------------------------
+    [container]
+------------------------------------------------------------------*/
+.container-fluid {
+    padding: 0;
+}
+
+/*------------------------------------------------------------------
+    [BUTTON]
+------------------------------------------------------------------*/
+.btn-flat {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    transition: .4s;
+    margin: 10px 0;
+}
+
+.btn-flat:hover {
+    background: #00bcd4;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .btn-flat {
+        font-size: 0.8em;
+    }
+}
+
+/*------------------------------------------------------------------
+    [ナビゲーション]
+------------------------------------------------------------------*/
+.n-wrapper {
+    display: flex;
+    width: 1920px;
+    margin: auto;
+    padding: 0 4%;
+}
+
+nav #n-cont {
+    max-width: 1920px !important;
+}
+
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+}
+
+nav img {
+    width: 250px;
+}
+
+nav .navbar-toggler {
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+/* recruitのサイトアイコンSVGのhover動作 */
+.site_icon {
+    width: auto;
+}
+
+nav svg {
+    width: 16px;
+}
+
+.site-icon g polyline,
+.site-icon g rect {
+    stroke: #cbcbcb;
+}
+
+.site-icon a:hover g polyline,
+.site-icon a:hover g rect {
+    stroke: #000;
+    transition: stroke 0.3s ease-out;
+}
+
+.active g polyline,
+.active g rect {
+    stroke: #000 !important;
+}
+
+/* 一部公開用（最終公開したら削除）↓ここから */
+.sample,
+.sample:hover {
+    color: #ededed !important;
+    text-decoration: none;
+}
+
+.link_sample {
+    color: #cbcbcb !important;
+    font-weight: 400;
+}
+
+.link_sample:hover {
+    color: #000 !important;
+    font-weight: 400 !important;
+}
+
+.active {
+    color: #000 !important;
+    font-weight: 400 !important;
+}
+
+.sample_f {
+    color: #999;
+}
+
+/* 一部公開用（最終公開したら削除）↑ここまで */
+
+/*------------------------------------------------------------------
+    [footer]
+------------------------------------------------------------------*/
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 5% 3% 1%;
+}
+
+footer span {
+    margin: 1% 1.5%;
+}
+
+footer .logo {
+    margin: 5% 0;
+    width: 200px;
+}
+
+.footer_box {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+.follow img {
+    width: 40px;
+    margin: 6px 3px;
+}
+
+.footer_link {
+    border-top: solid 1px #666;
+    margin-top: 1.5%;
+    padding-top: 3%;
+}
+
+.footer_link a {
+    color: #fff;
+    margin: 0 2.5%;
+}
+
+.footer_sublink a {
+    padding: 0 1rem;
+}
+
+.footer_info {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* 一部公開用（最終公開したら削除）↓ここから */
+.sample_f {
+    color: #999 !important;
+}
+
+/* 一部公開用（最終公開したら削除）↑ここまで */
+
+/*------------------------------------------------------------------
+    [layout]
+------------------------------------------------------------------*/
+/* 上下中央揃え */
+.ud-center {
+    display: flex;
+    justify-content: left;
+    /*左右*/
+    align-items: center;
+    /*上下中央揃え*/
+}
+
+/* 画像とテキスト微妙にかぶせる */
+.overlap {
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+
+.overlap-l-pic {
+    position: absolute;
+    width: 60%;
+}
+
+.overlap-r-txt {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 20px;
+}
+
+.overlap-l-txt {
+    position: absolute;
+    width: 50%;
+    top: 20px;
+}
+
+.overlap-r-pic {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+
+    .overlap,
+    .overlap-l-pic,
+    .overlap-r-txt,
+    .overlap-l-txt,
+    .overlap-r-pic {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* 表示・非表示 */
+    .s-hidden {
+        display: none;
+    }
+}
+
+/* 画像＋テキストボックス */
+.box {
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+/*------------------------------------------------------------------
+    [正方形のBOX]
+------------------------------------------------------------------*/
+.adjust-box {
+    position: relative;
+    /*width: 50%;*/
+    height: auto;
+    /*background: #EEE;*/
+}
+
+.box-1x1:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+}
+
+.adjust-box p {
+    line-height: 1.5em;
+}
+
+/*------------------------------------------------------------------
+    [card]
+------------------------------------------------------------------*/
+.card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    margin-bottom: 20px;
+}
+
+.card-img {
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    /*text-align: center;*/
+    color: #333;
+}
+
+.card-text {
+    /*    color: #777;*/
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card .btn-flat {
+    float: right;
+}
+
+/*------------------------------------------------------------------
+    [title]
+------------------------------------------------------------------*/
+/* 背景にカラフルな円 先頭*/
+.title01 {
+    position: relative;
+    color: #333;
+    text-shadow: 0 0 2px white;
+}
+
+.title01:before {
+    content: "";
+    position: absolute;
+    background: #9de5ff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    /* border: dashed 1px white; */
+    left: -15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+/* 左線 */
+.title02 {
+    padding: 0.25em 0.5em;
+    /*上下 左右の余白*/
+    color: #494949;
+    /*文字色*/
+    background: transparent;
+    /*背景透明に*/
+    border-left: solid 5px #7db4e6;
+    /*左線*/
+}
+
+/* 途中で色の変わる線 */
+.title03 {
+    border-bottom: solid 3px #cce4ff;
+    position: relative;
+}
+
+.title03:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #5472cd;
+    bottom: -3px;
+    width: 20%;
+}
+
+/* 両端に線を伸ばす */
+.title04 {
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+}
+
+.title04:before,
+.title04:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 1px;
+    background-color: black;
+}
+
+.title04:before {
+    left: 0;
+}
+
+.title04:after {
+    right: 0;
+}
+
+/* タグ風 */
+.title05 {
+    color: #505050;
+    /*文字色*/
+    padding: 0.5em;
+    /*文字周りの余白*/
+    display: inline-block;
+    /*おまじない*/
+    line-height: 1.3;
+    /*行高*/
+    background: #dbebf8;
+    /*背景色*/
+    vertical-align: middle;
+    border-radius: 25px 0px 0px 25px;
+    /*左側の角を丸く*/
+}
+
+.title05:before {
+    content: '●';
+    color: white;
+    margin-right: 8px;
+}
+
+/* 蛍光マーカー風 */
+.title06 {
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+/* 下側に小さく線をつける */
+.title07 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.title07:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* 交差線 */
+.title08:first-letter {
+    font-size: 2em;
+    color: #7172ac;
+}
+
+/* 背景にカラフルな円 */
+.title09 {
+    position: relative;
+    color: #333;
+    display: inline-block;
+    margin: 47px 0;
+    text-shadow: 0 0 2px white;
+}
+
+.title09:before {
+    content: "";
+    position: absolute;
+    background: #ffd69d;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}

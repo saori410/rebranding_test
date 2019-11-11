@@ -1,0 +1,837 @@
+/*------------------------------------------------------------------
+    [sample]
+------------------------------------------------------------------*/
+
+.feature {
+    text-align: center;
+    padding: 3% 10%;
+}
+
+.feature h1 {
+    font-weight: bold;
+}
+
+.bg_darkgray {
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.block {
+    padding: 4%;
+}
+
+.bk-cover {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+}
+
+hr {
+    border: solid 0.5px #707070;
+    width: 100%;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+#r-nav .nav-link {
+    padding-bottom: 2rem;
+}
+
+#r-nav .s-nav-link {
+    padding-bottom: 2.5rem;
+}
+
+#r-nav ul li:last-child {
+    padding-bottom: 0;
+}
+
+#r-nav .no-pick {
+    padding-left: 0;
+    margin-left: 90px;
+}
+
+#r-nav a.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.pick:before {
+    content: "急募";
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0px 10px 0px 0px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #6ABF4B;
+    vertical-align: middle;
+    text-decoration: none !important;
+}
+
+.s-pick {
+    color: #fff;
+    font-size: 1.8rem;
+    width: 60px;
+    font-weight: 300;
+    border-radius: 20px;
+    background-color: #6ABF4B;
+    vertical-align: middle;
+    padding-top: 2px;
+    text-decoration: none !important;
+    margin-top: 14px;
+    margin-bottom: 4px;
+}
+
+.company {
+    position: relative;
+}
+
+.company a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*----------- メニューモーダル --------------*/
+
+.fullmenu .modal-dialog {
+    margin: 0 0 0 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    ;
+}
+
+.fullmenu .modal-content {
+    height: 100%;
+    min-height: 100%;
+    border-radius: 0;
+    background: #fff;
+    overflow: auto;
+}
+
+.fullmenu .modal-content .modal-header {
+    border: 0px;
+}
+
+.fullmenu .modal-content button {
+    opacity: 1;
+}
+
+.fullmenu .modal-content button span {
+    color: #888;
+    font-weight: 600;
+    font-size: 40px;
+    text-shadow: none;
+}
+
+.fullmenu .modal-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fullmenu .modal-body .modal-logo img {
+    width: 158px;
+    padding-bottom: 84px;
+}
+
+.fullmenu .modal-body ul {
+    padding: 0 0 0 0;
+}
+
+.fullmenu .modal-body li {
+    padding-left: 24px;
+}
+
+.fullmenu .modal-body li:hover {
+    background-color: #F7F7F7;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.fullmenu .modal-body a {
+    color: #333;
+    font-size: 24px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.fullmenu .modal-body .social img {
+    width: 56px;
+    margin: 8px;
+}
+
+
+
+
+/*------------------------------------------------------------------
+    [WORK]
+------------------------------------------------------------------*/
+
+#WORK .col-md4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*------------------------------------------------------------------
+[RECRUIT]
+------------------------------------------------------------------*/
+
+.bg-rec {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.75)), url("../img/Recruit_top.jpg");
+    height: calc(90vh - 80px);
+    position: relative;
+}
+
+.bg-rec-sp {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.75)), url("../img/Recruit_top.jpg");
+    width: 100%;
+    height: 400px;
+}
+
+.bg-rec-ceo {
+    background-image: url("../img/recruit_ceo.jpg");
+}
+
+.rec-btn-area {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-bottom: 15rem;
+}
+
+.rec-btn-area-sp {
+    margin-top: 25rem;
+}
+
+.rec-btn {
+    border: solid 1px;
+    padding: 2% 5%;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 30%;
+}
+
+.rec-btn:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+@media (max-width: 600px) {
+    .rec-btn {
+        margin: 0;
+        padding: 4% 9%;
+    }
+}
+
+.member {
+    color: #333;
+    text-align: left;
+    display: flex;
+}
+
+.full_img {
+    padding: 0;
+    margin: 0 !important;
+}
+
+.full_img img {
+    width: 960px;
+}
+
+.rec_t {
+    font-size: 12rem;
+}
+
+/*#RECRUIT h2,*/
+#JOBLIST h2 {
+    font-size: 4.5rem;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+#RECRUIT h3,
+#JOBLIST h3 {
+    font-size: 3.3rem;
+}
+
+#RECRUIT span,
+#JOBLIST span {
+    font-size: 2.5rem;
+}
+
+/*#RECRUIT p,*/
+#JOBLIST p {
+    font-size: 1.8rem;
+}
+
+#RECRUIT .feature,
+#JOBLIST .feature {
+    padding: 3%;
+}
+
+.joblist h1 {
+    font-size: 3.3rem !important;
+}
+
+
+/* スマホサイズレイアウト */
+@media (max-width: 768px) {
+    #RECRUIT .order1 {
+        order: 2;
+    }
+
+    #RECRUIT .order2 {
+        order: 1;
+    }
+
+    .bg-rec-ceo {
+        display: none;
+    }
+
+    .rec_t {
+        font-size: 5rem;
+    }
+
+    #RECRUIT h2,
+    #JOBLIST h2 {
+        font-size: 3.9rem;
+    }
+
+    .rec-block {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-rec-ceo2 {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .member {
+        display: block !important;
+        text-align: center;
+    }
+
+    .member .block {
+        text-align: left;
+    }
+}
+
+.recruitment {
+    padding: 3% 1%;
+    color: #000;
+}
+
+.recruitment:hover {
+    color: #000;
+}
+
+.btm_parent {
+    position: relative;
+}
+
+.btm_child {
+    position: absolute;
+    bottom: 50px;
+    padding: 4%;
+    margin-right: 8%;
+}
+
+.recruitment:hover {
+    text-decoration: none;
+}
+
+.recruitment:hover .rec_title {
+    text-decoration: underline;
+}
+
+.as-outer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20rem;
+}
+
+.as-outer:before {
+    content: "";
+    display: block;
+    padding-top: 33%;
+    /* 640:1920の縦横比:640/1920=0.3333×100で33% */
+}
+
+.as-outer2 {
+    position: relative;
+    width: 100%;
+}
+
+.as-outer2:before {
+    content: "";
+    display: block;
+    padding-top: 66%;
+}
+
+.as-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*.carousel-inner,*/
+.carousel-item {
+    min-height: 400px;
+}
+
+.carousel-item h3 {
+    font-weight: 2.5rem;
+    font-weight: 600;
+}
+
+.carousel-item p {
+    font-size: 2rem;
+}
+
+.carousel-item span {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.carousel-indicators li {
+    background-color: #999;
+    border-radius: 50%;
+    margin: 1px 3px;
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-item img {
+    margin: 0 auto;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/next.png);
+    width: 80px;
+    height: 80px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/prev.png);
+    width: 80px;
+    height: 80px;
+}
+
+#JOBLIST .f_area {
+    background-color: #333;
+    color: #fff;
+}
+
+/*------------------------------------------------------------------
+    [JOB_DESCRIPTION]
+------------------------------------------------------------------*/
+
+
+.bg-job {
+    margin: 0;
+    background-color: #333;
+    text-align: center;
+    padding: 5%;
+    vertical-align: middle;
+}
+
+.text-serif p {
+    font-family: serif;
+}
+
+
+
+/*------------------------------------------------------------------
+    [JOB_INFO]
+------------------------------------------------------------------*/
+
+
+.job_t {
+    font-size: 3.2rem;
+}
+
+.job_dt_t {
+    font-size: 2.3rem;
+    padding-bottom: 10px;
+}
+
+.job_dt_p {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.8em;
+}
+
+
+
+
+/*------------------------------------------------------------------
+    [COMPANY]
+------------------------------------------------------------------*/
+
+#c-nav {
+    font-size: 2.5rem;
+    font-weight: 200;
+    padding-bottom: 5rem;
+}
+
+#c-nav a {
+    color: #333;
+}
+
+#c-nav a:hover {
+    color: #6ABF4B;
+}
+
+.c-feature {
+    padding: 7rem 2rem;
+}
+
+.c_sec_t {
+    font-size: 3.3rem;
+    font-weight: 700;
+}
+
+.c_cont {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 6rem;
+}
+
+.c_sub_cont {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+#c-table th {
+    text-align: left;
+    font-weight: 500;
+}
+
+#c-table td {
+    padding-left: 3rem;
+    font-size: 2rem;
+    vertical-align: middle;
+    font-weight: 200;
+}
+
+
+/*------------------------------------------------------------------
+    [NEWS_BLOG][TKsVOICE]
+------------------------------------------------------------------*/
+#news_blog a,
+#TKsVOICE a,
+#news_blog a:hover,
+#TKsVOICE a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#news_blog .card {
+    box-shadow: none;
+    border: none;
+    height: 730px;
+}
+
+#TKsVOICE .card {
+    box-shadow: none;
+    border: none;
+    height: auto;
+}
+
+@media (max-width: 1440px) {
+    #news_blog .card {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1280px) {
+    #news_blog .card {
+        height: 500px;
+        margin: 0 1%;
+    }
+}
+
+@media (max-width: 580px) {
+    #news_blog .card {
+        height: auto;
+        margin-bottom: 4%;
+    }
+}
+
+#news_blog .card-deck,
+#TKsVOICE .card-deck {
+    padding-bottom: 0;
+    width: 100%;
+}
+
+#news_blog .card-body,
+#TKsVOICE .card-body {
+    margin-top: 20px;
+}
+
+.nb_title {
+    font-size: 4rem;
+    margin-bottom: 4%;
+}
+
+.nb_top {
+    padding: 0 4%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nb_top_a {
+    display: flex;
+    margin: 0 4%;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.nb_top_img {
+    padding: 0;
+    padding-right: 1%;
+}
+
+@media (max-width: 768px) {
+    .nb_top_a {
+        display: block;
+    }
+
+    .nb_top_img {
+        padding-right: 0;
+        margin-bottom: 4%;
+    }
+}
+
+.nb_top_img img {
+    width: 1280px;
+}
+
+
+@media (max-width: 768px) {
+    .nb_top_txt {
+        padding: 4% 4% 0 4%;
+    }
+}
+
+.nb_card,
+.nb_cimg,
+.nb_ctitle {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.nb_card:hover .nb_cimg {
+    opacity: 0.7;
+}
+
+.nb_card:hover .nb_ctitle {
+    text-decoration: underline;
+}
+
+.reader_t_img {
+    width: 900px;
+}
+
+.reader {
+    margin-top: 5%;
+}
+
+.reader p {
+    font-size: 2rem;
+}
+
+.reader a {
+    color: #6abf4b;
+}
+
+.reader span {
+    font-size: 1.5rem;
+}
+
+.tag_blog {
+    color: #fff;
+    background-color: #333;
+    padding: 1% 3%;
+    border: solid 1px #333;
+}
+
+.tag_blog2 {
+    color: #333;
+    padding: 1% 3%;
+    border: solid 1px;
+}
+
+.tag_tk {
+    color: #fff;
+    background-color: #6abf4b;
+    padding: 1% 3%;
+    border: solid 1px #6abf4b;
+}
+
+@media (max-width: 559px) {
+
+    .tag_blog,
+    .tag_blog2,
+    .tag_tk {
+        display: none;
+    }
+
+    .nb_date {
+        margin: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .nb_ctitle {
+        margin-top: 0 !important;
+    }
+
+    .nb_card {
+        margin-top: 12%;
+    }
+}
+
+.tag_new {
+    color: #fff;
+    background-color: #6abf4b;
+    padding: 1% 3%;
+    margin-right: 10px;
+    border: solid 1px #6abf4b;
+}
+
+.nb_date {
+    margin: 20px 0 10px;
+}
+
+.tkvol {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.list .tk_list {
+    opacity: 1;
+    list-style: none;
+    transition: all 0.4s ease 0s;
+}
+
+.list .tk_list.is-hidden {
+    display: none;
+}
+
+.tk_card {
+    margin-bottom: 5% !important;
+}
+
+@media (max-width: 559px) {
+    .tk_card {
+        margin-bottom: 10% !important;
+    }
+}
+
+.video {
+    position: relative;
+    height: 0;
+    padding: 30px 0 56.25%;
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tk_thum {
+    position: relative;
+    height: 100%;
+}
+
+.tk_thum .video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.tk_link {
+    text-decoration: underline !important;
+}
+
+.tk_link:hover {
+    color: #6abf4b !important;
+}
+
+.as-outer_i {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+}
+.as-outer_i:before {
+    content:"";
+    display: block;
+    padding-top: 88.235%; /* 高さと幅の比を固定。ex:4:3に固定の場合3/4×100=75% */
+}
+.as-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------------------------------------------
+    [media]
+------------------------------------------------------------------*/
+
+@media (max-width: 559px) {
+    #c-nav {
+        text-align: center;
+    }
+
+    .c_cont {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+
+    .c_sub_cont {
+        font-size: 2.3rem;
+        line-height: 3rem;
+    }
+
+}

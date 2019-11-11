@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>COMPANY</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom2.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="dist/sal.css">
+    <!--アニメーション種類：data-sal="fade"
+    - `fade`
+    - `slide-up`
+    - `slide-down`
+    - `slide-left`
+    - `slide-right`
+    - `zoom-in`
+    - `zoom-out`
+    - `flip-up`
+    - `flip-down`
+    - `flip-left`
+    - `flip-right`-->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyAH11KT-3VStmy05ED9Nn_lzKtKUxls8gM&language=ja"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            initialize();
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ナビゲーション -->
+    <nav id="n-cont" class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="n-wrapper">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Innovationplus_logo.png" alt="株式会社イノベーションプラス">
+            </a>
+            <div class="collapse navbar-collapse" id="Navber">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link_sample" href="service.html">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link_sample" href="work.html">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link_sample active" href="company.html">COMPANY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link_sample" href="news_blog.html">NEWS/BLOG</a>
+                    </li>
+                    <li class="nav-item site-icon">
+                        <a class="nav-link link_sample rec_link" href="recruit.html">RECRUIT</a>
+                    </li>
+                </ul>
+                <div class="nav-item">
+                    <a class="nav-link link_sample" href="mailto:info@innovationplus.jp?subject=【お問い合わせ】&amp;body=会社名・氏名・メールアドレス・お問い合わせ内容をご記入ください。" target="_blank">CONTACT</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-link d-sm-none float-right" data-toggle="modal" data-target="#menuModal" aria-controls="Toggle navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="modal fade fullmenu" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul style="list-style-type:none;">
+                        <li><a href="index.html" class="nav-link link_sample active">TOP</a></li>
+                        <li><a href="service.html" class="nav-link link_sample">SERVICE</a></li>
+                        <li><a href="work.html" class="nav-link link_sample">WORK</a></li>
+                        <li><a href="company.html" class="nav-link link_sample">COMPANY</a></li>
+                        <li><a href="news_blog.html" class="nav-link link_sample">NEWS/BLOG</a></li>
+                        <li><a href="recruit.html" class="nav-link link_sample">RECRUIT</a></li>
+                        <li><a href="mailto:info@innovationplus.jp?subject=【お問い合わせ】&amp;body=会社名・氏名・メールアドレス・お問い合わせ内容をご記入ください。" target="_blank" class="nav-link link_sample">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ナビゲーション end -->
+
+    <div class="container-fluid">
+        <div class="feature">
+            <div class="row">
+                <div class="col-12 col-md-10 mx-auto text-center margin-t-100">
+                    <span class="feature_sub_t">会社案内</span>
+                    <h1 class="feature_t">COMPANY</h1>
+                </div>
+            </div>
+            <div class="row d-none d-sm-block">
+                <div class="col-12 col-md-8 mx-auto text-center">
+                    <h2 class="feature_p">企業や地域の新規事業の支援を事業の中核に、ビジネスコンサルティング、ユーザエクスペリエンス、アプリ開発、バックエンド開発・運用等を行っています。</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row d-block d-sm-none">
+            <div class="col-12 text-center">
+                <h2 class="feature_p">企業や地域の新規事業の支援を事業の中核に、ビジネスコンサルティング、ユーザエクスペリエンス、アプリ開発、バックエンド開発・運用等を行っています。</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- company -->
+    <div class="container-fluid">
+        <div id="company">
+            <div id="c-nav" class="row max_width margin-t-100">
+                <div class="col-md-6 mx-auto">
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#sec1">企業理念</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#sec2">リーダーシップ</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#sec3">会社概要</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#sec4">アクセス</a>
+                    </nav>
+                </div>
+            </div>
+
+
+            <section id="sec1">
+                <div class="text-center bg_gray">
+                    <div class="row max_width c-feature">
+                        <div class="col-md-12">
+                            <h2 class="c_sec_t fw600 margin-b-50">OUR VISION</h2>
+                            <p class="c_cont">Be Innovation</p>
+                            <p class="c_sub_cont">イノベーションを生み出せ</p>
+                            <p class="f1_75 fw200 margin-t-30">「Be Innovators」や「Be Innovative」を超越し、常に期待を超え続ける存在になる。<br />これが、これからのINNOVATION PLUSです。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max_width c-feature"></div>
+
+                <div class="text-center bg_gray">
+                    <div class="row max_width c-feature">
+                        <div class="col-md-12">
+                            <h2 class="c_sec_t fw600 margin-b-50">OUR MISSION</h2>
+                            <p class="c_cont">Beyond Your Exprctations</p>
+                            <p class="c_sub_cont">期待を越える存在であれ</p>
+                            <p class="f1_75 fw200 margin-t-30">お客様の期待を常に超え続ける存在として、これまでの知見を活かしたプロの視点で<br />お客様と一緒に成果を創り上げていきます。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max_width c-feature"></div>
+
+                <div class="text-center bg_gray">
+                    <div class="row max_width c-feature">
+                        <div class="col-md-12">
+                            <h2 class="c_sec_t fw600 margin-b-50">OUR VALUE</h2>
+                            <div class="row">
+                                <p class="mx-auto c_sub_cont text-left">
+                                    視座：いろいろな相手を理解する<br />
+                                    視野：自分の枠を越えてみる<br />
+                                    視点：相手にとっての価値を考える</p>
+                                <p class="col-md-12 f1_75 fw200 margin-t-30">お客様の期待を常に超え続ける存在として、これまでの知見を活かしたプロの視点で<br />お客様と一緒に成果を創り上げていきます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="sec2" class="margin-t-50">
+                <div class="row max_width block">
+                    <div class="col-md-12">
+                        <span class="sec_sub_t gry">リーダーシップ</span>
+                        <h2 class="sec_t">Our Leadership</h2>
+                    </div>
+                </div>
+
+                <div class="row max_width block  margin-b-40">
+                    <div class="col-md-6 d-block d-sm-none">
+                        <img src="img/takeshi_kosaka_1.png" alt="CEO_小坂武史" class="img-fluid margin-b-30">
+                    </div>
+                    <div class="col-md-5 mr-auto">
+                        <div class="f2_5 fw300 d-none d-sm-block">TAKESHI KOSAKA</div>
+                        <div class="f6 fw700 d-none d-sm-block">小坂 武史</div>
+                        <div class="f3 fw400 d-none d-sm-block">CEO</div>
+                        <div class="f2 fw300 d-block d-sm-none">TAKESHI KOSAKA</div>
+                        <div class="f4 fw600 d-block d-sm-none">小坂 武史</div>
+                        <div class="f2_5 fw300 d-block d-sm-none">CEO</div>
+
+                        <div class="text-serif">
+                            <p class="f3_3 margin-t-50 fw600">
+                                "Be INNOVATION"<br />
+                                私達の新たなミッションとして、我々の存在意義として、「Be INNOVATION」と定義しました。
+                            </p>
+
+                            <p class="f2 text-justify margin-t-30" style="line-height: 1.8em;">
+                                これは、「Be Innovators」や「Be Innovative」を超越し、常に期待を超え続ける存在になるんだ！という強い決心のもと決めました。
+                            </p>
+
+                            <p class="f2 text-justify margin-t-30" style="line-height: 1.8em;">
+                                また、ビジョンとして、実現したい世界観として、「ひとりでもすごい、集まったらもっとすごい、そんな仲間と共に世界をイノベーションする」を胸に持ち、顧客の期待に応え、その期待を超え続ける。
+                            </p>
+
+                            <p class="f2 text-justify margin-t-30" style="line-height: 1.8em;">
+                                これが、これからのINNOVATION PLUSです。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-sm-block">
+                        <img src="img/takeshi_kosaka_1.png" alt="CEO_小坂武史" class="img-fluid">
+                    </div>
+                </div>
+
+
+
+                <div class="row max_width block">
+                    <div class="col-md-4">
+                        <img src="img/Hirono.jpg" alt="弘野亮介" class="mx-auto img-fluid">
+                        <div class="margin-t-20 margin-b-50">
+                            <span class="f1_5 fw300">RYOUSUKE HIRONO</span>
+                            <div class="f3 fw600">弘野亮介</div>
+                            <span class="f1_9 fw300">Group Chief Operating Officer</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/Saito.png" alt="斉藤玲阿名" class="mx-auto img-fluid">
+                        <div class="margin-t-20 margin-b-50">
+                            <span class="f1_5 fw300">REONA SAITO</span>
+                            <div class="f3 fw600">斉藤玲阿名</div>
+                            <span class="f1_9 fw300">Chief Architect</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/Sudo.png" alt="須藤雅人" class="img-fluid">
+                        <div class="margin-t-20 margin-b-50">
+                            <span class="f1_5 fw300">MASATO SUDO</span>
+                            <div class="f3 fw600">須藤雅人</div>
+                            <span class="f1_9 fw300">UX Consultant</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sec3">
+                <div class="row max_width block">
+                    <div class="col-md-12">
+                        <span class="sec_sub_t gry">会社概要</span>
+                        <h2 class="sec_t">Company Overview</h2>
+                    </div>
+                </div>
+
+                <div class="bg_gray">
+                    <div class="row max_width block">
+                        <div class="col-md-6 f2">
+                            <table id="c-table" class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th>会社名</th>
+                                        <td>INNOVATION PLUS Inc.
+                                            株式会社イノベーションプラス</td>
+                                    </tr>
+                                    <tr>
+                                        <th>資本金</th>
+                                        <td>4,700万</td>
+                                    </tr>
+                                    <tr>
+                                        <th>設立</th>
+                                        <td>2007年2月13日</td>
+                                    </tr>
+                                    <tr>
+                                        <th>代表</th>
+                                        <td>CEO 兼 Innovation Producer 小坂 武史</td>
+                                    </tr>
+                                    <tr>
+                                        <th>所有地</th>
+                                        <td>〒107-0052東京都港区赤坂8-5-41
+                                            イースタン青山ビル5F</td>
+                                    </tr>
+                                    <tr>
+                                        <th>従業員数</th>
+                                        <td>18名</td>
+                                    </tr>
+                                    <tr>
+                                        <th>TER&amp;FAX</th>
+                                        <td>03-6663-8956</td>
+                                    </tr>
+                                    <tr>
+                                        <th>取引銀行</th>
+                                        <td>みずほ銀行（青山支店）
+                                            三井住友銀行（青山支店）</td>
+                                    </tr>
+                                    <tr>
+                                        <th>顧問弁護士</th>
+                                        <td>五番町法律事務所　宮内 宏</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-md-6 f2">
+                            <div class="fw200" style="padding:0.74rem;">
+                                <p class="f2 fw500">事業概要</p>
+                                <p class="fw400" style="margin: 0;">ストラテジー支援</p>
+                                <ul style="padding-left: 2.2rem;padding-bottom: 1rem;">
+                                    <li>ビジネス構築</li>
+                                    <li>エクスペリエンス構築</li>
+                                </ul>
+                                <p class="fw400" style="margin: 0;">自社サービス</p>
+                                <ul style="padding-left: 2.2rem;padding-bottom: 1rem;">
+                                    <li>BizDogaPlus</li>
+                                </ul>
+                                <p class="fw400" style="margin: 0;">プラットフォームビジネス事業</p>
+                                <ul style="padding-left: 2.2rem;padding-bottom: 1rem;">
+                                    <li>スマートフォンアプリ 独自ポータル構築・運用サービス</li>
+                                </ul>
+                                <p class="fw400" style="margin: 0;">エンタープライズビジネス事業</p>
+                                <ul style="padding-left: 2.2rem;">
+                                    <li>BtoB向けスマートフォン・タブレットサービス開発</li>
+                                    <li>NFC/BLEなどのコミュニケーションツールを活用するシステム開発</li>
+                                    <li>システム開発受託</li>
+                                </ul>
+
+                                <p class="f2 fw600 margin-t-30">取引企業</p>
+                                <p>株式会社アシックス / Adobe Systems Incorporated / 株式会社インターネットイニシアティブ / インフォコム株式会社 / 株式会社NTTドコモ / 株式会社ぐるなび / KDDI株式会社 / コニカミノルタ株式会社 / JIG-SAW株式会社 / ソニー株式会社 / フェリカネットワークス株式会社 / 株式会社 プレジデント社 / 株式会社メトロ アド エージェンシー / 国立情報学研究所 / 九州工業大学</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="sec4">
+                <div class="row max_width block margin-t-20">
+                    <div class="col-md-12">
+                        <span class="sec_sub_t gry">アクセス</span>
+                        <h2 class="sec_t">Access</h2>
+                    </div>
+                </div>
+
+                <div class="row max_width block" style="padding-top: 0;">
+                    <div class="col-md-12">
+                        <p class="f2_25 fw300" style="font-family: sans-serif;">〒107-0052 東京都港区赤坂8-5-41 イースタン青山ビル５F</p>
+                    </div>
+                    <div class="col-md-12 margin-t-20">
+                        <h3 class="f2 fw600">最寄駅</h3>
+                        <p class="f2_25 fw300">東京メトロ銀座線・半蔵門線「青山一丁目駅」 徒歩４分</p>
+                    </div>
+                </div>
+
+                <div id="map_canvas" style="width:100%;height:500px;"></div>
+
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row max_width">
+            <div class="col-12 col-md-6">
+                <div class="footer_box" style="border-bottom: solid 1px #666;">
+                    <p class="ftr_t">仕事を相談したい</p>
+                    <a class="ftr_sub_t wh" href="mailto:info@innovationplus.jp?subject=【お問い合わせ】&amp;body=会社名・氏名・メールアドレス・お問い合わせ内容をご記入ください。">CONTACT</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer_box" style="border-bottom: solid 1px #666;">
+                    <p class="ftr_t">一緒に仕事をしたい</p>
+                    <a href="recruit.html" class="ftr_sub_t wh">RECRUIT</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer_box">
+                    <p class="ftr_t gry">会社案内をダウンロード</p>
+                    <p class="ftr_sub_t gry">Coming Soon</p>
+                </div>
+            </div>
+            <div class="col-md-6 follow">
+                <div class="footer_box">
+                    <p class="ftr_t">Follow</p>
+                    <a href="https://www.facebook.com/pages/category/Internet-Company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A4%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%97%E3%83%A9%E3%82%B9-226185137515075/" target="_blank">
+                        <img src="img/fb_icon.png" alt="Facebook" class="img-fluid">
+                    </a>
+                    <a href="https://www.instagram.com/innovationplus0213/" target="_blank">
+                        <img src="img/ig_icon.png" alt="Instagram" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-12 footer_link f1_5">
+                <a href="service.html">サービス</a>
+                <a href="work.html">実績</a>
+                <a href="company.html">会社情報</a>
+                <a href="news_blog.html">ニュース・ブログ</a>
+                <a href="recruit.html">採用情報</a>
+                <a class="wh" href="mailto:info@innovationplus.jp?subject=【お問い合わせ】&amp;body=会社名・氏名・メールアドレス・お問い合わせ内容をご記入ください。">お問い合わせ</a>
+            </div>
+            <div class="col-md-12">
+                <a href="index.html"><img class="logo img-fluid" src="img/Innovationplus_logo_w.png" alt="株式会社イノベーションプラス"></a>
+            </div>
+            <div class="col-md-12 footer_sublink f1_5">
+                <a class="sample_f">© INNOVATION PLUS, Inc.</a>
+                <a href="privacy-policy.html" class="sample_f">プライバシーポリシー</a>
+                <a href="terms.html" class="sample_f">サイト利用規約</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="dist/sal.js"></script>
+
+    <script>
+        sal({
+            once: true
+        });
+
+    </script><!-- true:アニメーション1回のみ -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('a[href^=#]').click(function() {
+                var speed = 500;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({
+                    scrollTop: position
+                }, speed, "swing");
+                return false;
+            });
+        });
+
+    </script>
+
+
+    <script>
+        function initialize() {
+            var latlng = new google.maps.LatLng(35.672591, 139.727013);
+            var myOptions = {
+                zoom: 18,
+                /*拡大比率*/
+                center: latlng,
+                /*表示枠内の中心点*/
+                mapTypeControlOptions: {
+                    mapTypeIds: ['sample', google.maps.MapTypeId.ROADMAP]
+                } /*表示タイプの指定*/
+            };
+            var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+
+            /*アイコン設定▼*/
+            var icon = new google.maps.MarkerImage('img/ip_map-icon.png',
+                new google.maps.Size(150, 113), /*アイコンサイズ設定*/
+                new google.maps.Point(0, 0) /*アイコン位置設定*/
+            );
+            var markerOptions = {
+                position: latlng,
+                map: map,
+                icon: icon,
+                title: '株式会社イノベーションプラス'
+            };
+            var marker = new google.maps.Marker(markerOptions);
+            var styledMapOptions = {
+                name: '株式会社イノベーションプラス'
+            }
+            var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
+            map.mapTypes.set('sample', sampleType);
+            map.setMapTypeId('sample');
+        }
+
+    </script>
+
+</body>
+
+</html>
