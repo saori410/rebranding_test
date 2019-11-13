@@ -361,6 +361,23 @@ span {
     transition: 0.5s;
 }
 
+.h-cover {
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.h-cont {
+    padding: 6% 4%;
+    position: relative;
+    height: auto;
+    box-sizing: content-box;
+}
+
+
 .thumbnail-wrapper {
     display: block;
     margin: 0;
@@ -546,7 +563,6 @@ span {
 }
 
 .btn_h80 {
-    width: 350px;
     height: 80px;
     padding: 2rem;
     font-size: 24px;
@@ -730,12 +746,17 @@ span {
     font-weight: 300;
 }
 
+.serv_sec_t {
+    font-weight: 700;
+}
+
 .s_cont {
     height: calc(100vh - 80px);
     background-position: center;
     background-size: cover;
     position: relative;
     margin-bottom: 3rem;
+    overflow: hidden;
 }
 
 .service1 {
@@ -752,7 +773,7 @@ span {
 }
 
 #SERVICE_POC .card-img-top {
-    width: 150px;
+    width: 40%;
     height: auto;
     margin: 0 auto;
     margin-top: 10%;
@@ -772,17 +793,70 @@ span {
     padding: 50px;
 }
 
-
 .o-box {
     position: absolute;
     top: 40%;
     transform: translateY(-40%);
-    -webkit- transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
 }
 
 .s_box .col-12 {
     padding: 0 50px;
 }
+
+
+.service1 {
+    padding: 6% 4%;
+    position: relative;
+    height: calc(100vh - 80px);
+    box-sizing: content-box;
+}
+
+
+.zoom {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100vw;
+    max-width: auto;
+    max-height: 100%;
+    transition: all 0.4s ease-out;
+    background-size: cover;
+    /*    max-width: calc(100% * 1.3);*/
+    /*    min-height: 100vh;*/
+    /*    transform: translate(-15%, -0.5%);*/
+}
+
+a:hover .zoom {
+    transition: all 0.4s ease-out;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+
+.poc-service .card {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.serv-btn {
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 0;
+    line-height: 35px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.serv-btn.active {
+    background-color: #000;
+    color: #fff !important;
+}
+
+
 
 .s_bg_1 {
     background-image: url("../img/poc_background.jpg");
@@ -1409,12 +1483,12 @@ span {
 }
 
 .asc-bg {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.00)),
-        url("../img/work/work-20191101-01.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.00)), url(../img/work/work-20191101-01.jpg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 .nagano {
     background-image: url("../img/nagano_bg.png");
@@ -1692,7 +1766,7 @@ span {
 
 .result_p {
     font-size: calc(2.0rem + 20 * (100vw - 320px) / 2240);
-    line-height: 120%;
+    line-height: 180%;
 }
 
 .result_sub_t {
@@ -1738,11 +1812,6 @@ span {
 .detail_card .card {
     background-color: transparent;
     box-shadow: 0 0 0;
-}
-
-.p0 {
-    padding-right: 0;
-    padding-left: 0;
 }
 
 /* 横モバイルサイズまで(col-sm)  */
@@ -2007,6 +2076,51 @@ textarea::-moz-placeholder {
 
 
 /*------------------------------------------------------------------
+[IE対応]
+------------------------------------------------------------------*/
+.ie-disp .col-md-6 {
+    padding: 5%;
+    margin: 5% 0;
+}
+
+.ie-disp img {
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (-ms-high-contrast: none) {
+    .ie-none {
+        display: none;
+    }
+}
+
+@-moz-document url-prefix() {
+    .ie-disp {
+        display: none;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .ie-disp {
+        display: none;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .ie-disp {
+        display: none;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .ie-disp {
+        display: none;
+    }
+}
+
+
+
+/*------------------------------------------------------------------
     [media query]
 ------------------------------------------------------------------*/
 
@@ -2048,7 +2162,6 @@ textarea::-moz-placeholder {
         font-size: calc(5rem + 110 * (100vw - 320px) / 2240);
     }
 
-
     .serv_t_en {
         font-size: 10rem;
         font-size: calc(2.4rem + 46 * (100vw - 320px) / 2240);
@@ -2077,6 +2190,11 @@ textarea::-moz-placeholder {
     .serv_sec_p {
         font-size: 10rem;
         font-size: calc(2.4rem + 20 * (100vw - 320px) / 2240);
+    }
+
+    .serv_sec_t {
+        font-size: 10rem;
+        font-size: calc(2.6rem + 56 * (100vw - 320px) / 2240);
     }
 }
 

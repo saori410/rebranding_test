@@ -1,8 +1,24 @@
 /*------------------------------------------------------------------
     [base]
 ------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
 * {
-    font-family: 'SF Pro Text', Helvetica,'Segoe UI', Arial, 'Hiragino Sans', 'ヒラギノ角ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Roboto, 'Droid Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,
+        '.SFNSDisplay-Regular";',
+        'SF Pro Text',
+        Helvetica,
+        'Segoe UI',
+        Arial,
+        Roboto,
+        'Hiragino Sans',
+        'ヒラギノ角ゴシック',
+        'Hiragino Kaku Gothic ProN',
+        'ヒラギノ角ゴ ProN W3',
+        Meiryo,
+        'メイリオ',
+        'Droid Sans',
+        sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -10,9 +26,11 @@
     box-sizing: border-box;
 }
 
+
 html {
     overflow-x: hidden;
     overflow-y: scroll;
+    color: #000;
     font-size: 12px;
 }
 
